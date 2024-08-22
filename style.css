@@ -26,7 +26,8 @@ font-family: "DM Serif Display", serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgb(37, 37, 37);
+  border-bottom: 1px solid rgb(133, 132, 132);
+  border-bottom: 1px solid brown;
 }
 
 
@@ -34,5 +35,35 @@ font-family: "DM Serif Display", serif;
 
 
 /* Category container */
+.category-container{
+    height: 10vh;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    font-weight: 550;
+    border-bottom: 1px solid rgb(133, 132, 132);
+}
+
+.cat:hover{
+border-bottom: 2px solid brown;
+}
+
+.sub{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom:none;
+    cursor: pointer;
+}
+
+.sub:hover{
+    color: rgb(215, 199, 199);
+}
+
+.sub:active{
+    color: black;
+}
 
 
