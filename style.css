@@ -95,10 +95,10 @@ input{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px 7px;
+    gap: 25px 10px;
     align-items:center;
 justify-content:space-around;
-margin: 5px 0px;
+margin: 15px 0px;
 }
 
 
