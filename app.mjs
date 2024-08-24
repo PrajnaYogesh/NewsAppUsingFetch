@@ -1,12 +1,14 @@
 import { getLatestNews } from "./LatestNews.mjs";
-import {getNewsForCategory} from "./category.mjs"
+import {getNewsForCategory} from "./category.mjs";
+import { getNewsForSearch } from "./search.mjs";
 
-let outerContainer = document.querySelector('.news-container')
+let outerContainer = document.querySelector('.news-container');
 let business = document.getElementById("business");
 let sports = document.getElementById("sports");
-let technology =  document.getElementById("technology")
-let entertainment =  document.getElementById("entertainment")
-let health = document.getElementById("health")
+let technology =  document.getElementById("technology");
+let entertainment =  document.getElementById("entertainment");
+let health = document.getElementById("health");
+let search = document.getElementById('search');
 
 
 
@@ -29,11 +31,13 @@ function displayNews(jsonData){
         let bottomDiv = document.createElement('div');
         bottomDiv.classList.add('style-bottom')
         let left = document.createElement('p');
-        left.textContent=`${item.source_name}`;
+        left.textContent=`${item.pubDate}`;
+        left.classList.add('dateStyle')
         
         let right = document.createElement('a');
-        right.textContent = "see more"
+        right.textContent = "read more..."
         right.setAttribute('href',`${item.source_url}`);
+        right.classList.add('see-style')
         
         bottomDiv.appendChild(left)
         bottomDiv.appendChild(right)
@@ -90,6 +94,13 @@ health.addEventListener('click',()=>{
         displayNews(data);
   });
 });
+
+search.addEventListener('keydown',(event)=>{
+    let info = event.target.value;
+    getNewsForSearch(info).then((data)=>{
+        displayNews(data);
+  });
+})
 
     
     

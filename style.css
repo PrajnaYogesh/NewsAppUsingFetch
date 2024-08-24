@@ -2,16 +2,14 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background-color: rgb(214, 212, 212);
+    background-color: rgb(225, 221, 221);
 }
 
-:root{
 
-}
 
 /* main-conatiner */
 .main-container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
    
 }
 
@@ -26,15 +24,18 @@ font-family: "DM Serif Display", serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgb(133, 132, 132);
-  border-bottom: 1px solid brown;
+  /* border-bottom: 1px solid rgb(133, 132, 132); */
+  border-bottom: 3px solid brown;
+  text-shadow: 2px 2px 4px rgba(91, 8, 8, 0.5);
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 
 .logo{
-width: 100px;
-height: 100px;
+width: 90px;
+height: 80px;
 border-radius: 50%;
+padding-left: 10px;
 }
 
 
@@ -47,7 +48,9 @@ border-radius: 50%;
     justify-content: space-between;
     font-size: 1.7rem;
     font-weight: 550;
-    border-bottom: 1px solid rgb(133, 132, 132);
+    /* border-bottom: 1px solid rgb(181, 21, 21); */
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(91, 8, 8, 0.5);
 }
 
 .cat:hover{
@@ -91,39 +94,70 @@ input{
   } */
 
 .news-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px 10px;
+    gap: 45px 10px;
     align-items:center;
 justify-content:space-around;
-margin: 15px 0px;
+/* margin: 15px 0px; */
+box-shadow: rgba(150, 7, 7, 0.35) 0px 5px 15px;
+/* transition: transform 0.3s ease; */
 }
 
 
+/* .news-container:hover{
+    transform: translateY(-10px);
+} */
 
 .box-style{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 300px;
     height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transition: transform 0.3s ease;
+border-radius: 5px;
 
+}
+
+.box-style:hover{
+    transform: translateY(-10px);
 }
 
 .news-img{
     width: 300px;
     height: 260px;
-
+border-radius: 5px
 }
 
 .title-style{
-    text-align: center;
+    text-align: left;
     margin:5px 0px;
+    height: 60px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7rem;
+  /* border: 1px solid blue; */
+  text-wrap: wrap;
 }
 
 .style-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:5px 5px
+    margin:10px 5px;
+    height: 15px;
+    /* border: 1px solid red; */
+}
+
+.dateStyle{
+    font-weight: bold;
+    font-size: small;
+}
+
+.see-style{
+    color: brown;
+    font-weight: bold;
 }
