@@ -8,10 +8,9 @@
 
 
 /* main-conatiner */
-.main-container{
-    /* border: 1px solid red; */
+/* .main-container{
    
-}
+} */
 
 /* Heading */
 .news-heading{
@@ -141,6 +140,7 @@ border-radius: 5px
   font-size: 0.7rem;
   /* border: 1px solid blue; */
   text-wrap: wrap;
+  padding: 0px 5px;
 }
 
 .style-bottom{
@@ -150,6 +150,7 @@ border-radius: 5px
     margin:10px 5px;
     height: 15px;
     /* border: 1px solid red; */
+    padding: 0px 5px;
 }
 
 .dateStyle{
